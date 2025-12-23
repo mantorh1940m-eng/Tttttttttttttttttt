@@ -1,0 +1,73 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(-45deg, #0f172a, #334155, #1e293b, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: white;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white !important;
+    padding: 12px;
+}
+
+.form-control::placeholder { color: rgba(255, 255, 255, 0.5); }
+
+.btn-main {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.article-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 20px;
+    border-right: 4px solid #6366f1;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.article-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+footer {
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover { color: #a855f7; }
